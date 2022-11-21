@@ -1,21 +1,7 @@
 body{
     background-color: rgb(175, 231, 245);
 }
-h1{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
 table,td,th{
     border:1.5px solid black
 
-}
-.input{
-    margin-left: 42em;
-    margin-bottom: 2em;
-}
-h3{
-    text-align: center;
-}
-table{
-    margin-left: 38em;
 }

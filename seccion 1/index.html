@@ -9,21 +9,80 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ejercicio 1.1</h1>
-    <h2>Teniendo en cuenta los conceptos desarrollados durante el componente formativo, construir un documento donde
-        se dé solución a los siguientes problemas de lógica proposicional registrando cada uno de los pasos elaborados
-        para llegar a la solución: </h2>
-    <form id="form">
-        <p>(2 * 5) < 8 OR ((4 * 6) > (2 * 5) )</p>
-        <input type="text" name="first">
-        <input type="submit" value="validar">
-        <p id="resultado"></p>
-    </form>
-    <form id="form2">
-        <p>(4+ 5) < 3 AND ( ( 5 * 5 ) + (4 + 25 < 3) )</p>
-        <input type="text" name="sec">
-        <input type="submit" value="validar">
-        <p id="resultado1"></p>
-    </form>
+    <h1> Construir la tabla de verdad para las siguientes expresiones:</h1>
+    <div id="p1">
+        <h3>(2*5)<8 OR ((4*6)>(2*5))</h3>
+            <h3>(10)<8 OR((24)>(10)</h3>
+                <h3>10<8 OR (24)>(10)</h3>
+                    <h3>Falso-Verdadero</h3>
+    </div>
+        <div id="p2">
+            <h3>(4+5)<3 AND ((5*5)+(4+25<3))</h3>
+                <h3>9<3 AND ((25)+(29<3))<h3>
+                    <h3>Falso-Falso</h3>
+        </div>
+        <table class="tabla1">
+            <thead>
+                <tr>
+                    <th>P</th>
+                    <th>∧</th>
+                    <th>Q</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <table class="tabla2">
+            <thead>
+                <tr>
+                    <th>P</th>
+                    <th>V</th>
+                    <th>Q</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+        </table>
 </body>
 </html>

@@ -3,26 +3,19 @@ body{
 }
 h1{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 table,td,th{
     border:1.5px solid black
+
 }
-#p2{
-    margin-left: 48em;
-    position: relative;
-    bottom: 9em;
+.input{
+    margin-left: 42em;
+    margin-bottom: 2em;
 }
-.tabla2{
-    margin-left: 52em;
-    position: relative;
-    bottom: 16em;
+h3{
+    text-align: center;
 }
-#p1{
-    margin-left: 22em;
-    position: relative;
-}
-.tabla1{
-    margin-left: 24em;
-    position: relative;
-    bottom: 6em;
+table{
+    margin-left: 38em;
 }

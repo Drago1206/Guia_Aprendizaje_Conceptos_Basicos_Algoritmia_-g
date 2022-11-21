@@ -5,6 +5,10 @@ table,td,th{
     border:1.5px solid black
 
 }
+h1,h3,p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
 .input{
     margin-left:36em;
     margin-bottom: 2em;

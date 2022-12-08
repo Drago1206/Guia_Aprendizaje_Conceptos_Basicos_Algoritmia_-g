@@ -4,19 +4,24 @@ addEventListener("DOMContentLoaded",(e)=>{
     form.addEventListener("submit",(e)=>{
         e.preventDefault();
         let data= Object.fromEntries(new FormData(e.target));
-        let fechaN = data["fchaN"].split("-")[0]
-        let fechaA = new Date().getFullYear()
-        let  h1=document.querySelector("h1")
-        let procs=(fechaA-fechaN )
-        if(fechaN>=fechaA){
-            console.log(fechaA-fechaN);
-            h1.insertAdjacentHTML("beforeend",`
-            <h1>${procs}</h1>`)
+        let fechaN=data["fchaN"].split("-")[0]
+        let mytable= document.querySelector("tbody")
+        console.log(`${fechaN}`)
+        if(fechaN %4==0){
+            console.log("Es bisiesto")
+            mytable.insertAdjacentHTML("beforeend",`
+            <tr> <td>${fechaN} </td> 
+            <td> ${"Es bisiesto"} </td> </tr>`)
+        }else if(fechaN %400==0){
+            console.log("Es bisiesto")
+            mytable.insertAdjacentHTML("beforeend",`
+            <tr> <td>${fechaN} </td> 
+            </tr> <td> ${"Es bisiesto"} </td> </tr>`)
         }else{
-            console.log(fechaA-fechaN);
-            h1.insertAdjacentHTML("beforeend",`
-            <h1>${procs}</h1>`)
-                    
+            console.log("no es bisiesto")
+            mytable.insertAdjacentHTML("beforeend",`
+            <tr> <td>${fechaN} </td> 
+            <td> ${"No es bisiesto"} </td> </tr>`)
         }
         
         /*let fechaN=Date(data.fchaN)
